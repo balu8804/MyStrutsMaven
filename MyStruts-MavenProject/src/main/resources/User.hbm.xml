@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-mapping>
+	<class name="com.java.users.UserInfo" table="User">
+
+		<id name="u_id" type="java.lang.Integer">
+			<column name="Id" length="11" not-null="true" />
+			<generator class="identity" />
+		</id>
+		<property name="name" type="string">
+			<column name="Name" length="20" not-null="true" unique="false" />
+		</property>
+		<property name="ssn" type="int">
+			<column name="SSN" length="11" not-null="true" unique="true" />
+		</property>
+		<property name="address" type="string">
+			<column name="Address" length="45" not-null="true" unique="false" />
+		</property>
+		<property name="city" type="string">
+			<column name="city" length="45" not-null="true" unique="false" />
+		</property>
+		<property name="state" type="string">
+			<column name="state" length="45" not-null="true" unique="false" />
+		</property>
+		<property name="country" type="string">
+			<column name="country" length="45" not-null="true" unique="false" />
+		</property>
+		<property name="zip" type="java.lang.Integer">
+			<column name="zip" length="11" not-null="true" unique="false" />
+		</property>
+
+
+
+
+
+
+
+
+
+
+	</class>
+
+
+
+
+
+
+</hibernate-mapping>
